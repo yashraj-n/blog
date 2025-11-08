@@ -16,32 +16,33 @@ const projects = await getAllProjects()
   <section>
     <div class="min-w-full">
       <div class="prose mb-8">
+        <h1 class="text-3xl font-medium mb-4">Yashraj Narke</h1>
+        <p class="text-muted-foreground text-lg mb-4">
+          I make stuff, I break stuff
+        </p>
         <p class="mt-0">
-          astro-erudite is an opinionated, unstyled static blogging template
-          that prioritizes simplicity and performance, built with <Link
-            href="https://astro.build"
-            external
-            underline>Astro</Link
-          >, <Link href="https://tailwindcss.com" external underline
-            >Tailwind</Link
-          >, and <Link href="https://ui.shadcn.com" external underline
-            >shadcn/ui</Link
-          >. It provides a clean foundation for your content while being
-          extremely easy to customize.
+          Welcome to my corner of the web where I share the projects, lessons, and
+          half-finished experiments that shape my journey as a learning developer.
+          I try things, I ask questions, and I jot down what actually helps me move
+          forward.
         </p>
         <p>
-          To learn more about the philosophy behind this template, check out the
-          following blog post: <Link
-            href="/blog/the-state-of-static-blogs"
-            underline>The State of Static Blogs in 2024</Link
-          >.
+          Expect approachable breakdowns, honest notes on what went wrong (and
+          what finally worked), plus the occasional reflection on staying curious.
+          If you want to swap ideas, or point me to a better way of doing something, feel free to
+          reach out on <Link href="https://github.com/yashraj-n" class="text-foreground" underline external>GitHub</Link> or
+          drop me an <Link href="mailto:hello@yashraj.eu.org" class="text-foreground" underline>email</Link>.
         </p>
       </div>
 
-      <h2 class="mb-4 text-2xl font-medium">Example Projects Listing</h2>
-      <div class="flex flex-col gap-4">
-        {projects.map((project) => <ProjectCard project={project} />)}
-      </div>
+      {projects.length > 0 && (
+        <>
+          <h2 class="mb-4 text-2xl font-medium">Projects</h2>
+          <div class="flex flex-col gap-4">
+            {projects.map((project) => <ProjectCard project={project} />)}
+          </div>
+        </>
+      )}
     </div>
   </section>
 </Layout>

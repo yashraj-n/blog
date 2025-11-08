@@ -1,6 +1,6 @@
 {
-  "name": "astro-erudite",
-  "short_name": "astro-erudite",
+  "name": "Yashraj's Blogs",
+  "short_name": "Yashraj's Blogs",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#000000",
+  "theme_color": "#4e4e4e",
+  "background_color": "#272727",
   "display": "standalone"
 }

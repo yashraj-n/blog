@@ -18,8 +18,16 @@ import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 
 import tailwindcss from '@tailwindcss/vite'
 
+
+
 export default defineConfig({
-  site: 'https://astro-erudite.vercel.app',
+  site: 'https://blog.yashrajn.com',
+  redirects:{
+    '/containers-from-scratch/': {
+      status: 301, // permanent redirect
+      destination: '/blog/creating-containers-from-scratch/',
+    }
+  },
   integrations: [
     expressiveCode({
       themes: ['github-light', 'github-dark'],
